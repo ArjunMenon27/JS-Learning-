@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Invest- Guru - Home Page</title>
+    <style>
+
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0%;
+            list-style: none;
+            background-color: #7fa0c1;
+            border-radius: 10px;
+        }
+         .header > h1{
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-align: center;
+        padding: 5px;
+         }
+        nav{
+            background-color: #484646;
+            border-radius: 10px;
+        }
+        .menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px;
+            list-style: none;
+            
+        }
+        .menu > li{
+            position: relative;
+        }
+        .menu >li >a {
+            display: block;
+            padding: 10px 50px;
+            color: aliceblue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .menu >li >a:hover{
+            border-radius: 5px;
+            background-color: #8c8989;
+        }
+        .submenu {
+            position: absolute;
+            top: 100%;
+            padding: 5px 40px;
+            list-style: none;
+            background-color:  #484646;
+            text-decoration: none;
+            font-weight: bold;
+            display: none;
+        }
+
+        .menu > li:hover .submenu {
+            display: block;
+        }
+        .submenu >li >a {
+            color: aliceblue;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .submenu>li:hover {
+        background-color: #8c8989;
+        }
+        .submenu>li{
+            position: relative;
+        }
+        .subsubmenu{
+            position: absolute;
+            top: 0%;
+            left: 100%;
+            padding: 5px; 
+            list-style: none;
+            background-color:  #484646;
+            text-decoration: none;
+            font-weight: bold;
+            display: none;
+        }
+        .subsubmenu >li>a{
+            color: aliceblue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .subsubmenu >li:hover {
+        background-color: #8c8989;
+        }
+        .submenu > li:hover > .subsubmenu {
+            display: block;
+        }
+        .banner {
+            background-image: url('https://picsum.photos/1200/300?grayscale');
+            background-position: center;
+            background-size: cover;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .banner-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(0,0,0,0.5);
+            padding: 20px 30px;
+            border-radius: 10px;
+        }
+        .banner-icon{
+            height:400px;
+        }
+        .banner-content > span{
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+        }
+        .products{
+        padding: 20px;
+        }
+        .products >h2 {
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;  
+        }
+        .product-grid{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;     
+        }
+        .product{
+            background: white;
+            padding: 20px;
+            width: 25%;
+            box-shadow: 0 2px 5px #34495e;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .product >img{
+            max-width: 100%;
+            height: 200px;
+            border-radius: 0px;
+
+        }
+    </style>
+</header>
+<body>
+    <header class="header">
+        <h1>Invest Guru</h1>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Products</a>
+                    <ul class="submenu">
+                        <li><a href="#">Mobile</a></li>
+                        <li><a href="#">Laptop</a></li>
+                        <li><a href="#">Camera</a></li>
+                        <li>
+                            <a href="#">Watches</a>
+                            <ul class="subsubmenu">
+                                <li><a href="#">Seiko</a></li>
+                                <li><a href="#">Tissot</a></li>
+                                <li><a href="#">Swatch</a></li>
+                                <li><a href="#">Rolex</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">shoes</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Cart</a>
+                </li>
+                <li>
+                    <a href="Registeration.html">Register</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="banner">
+        <div class="banner-content">
+            <img src="https://www.shutterstock.com/image-vector/super-deal-flaming-label-sale-600nw-2160213391.jpg" alt="detils icon" class="banner-icon">
+            <span>Explore the Offers!!</span>
+        </div>
+    </div>
+    <section class="products">
+        <h2> Feature Products</h2>
+        <div class="product-grid">
+            <div class="product">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRCfBE5sT_q04_PDKLSZv6HqzvIwIPPijlt3lL_d0I8J3vg5r5S6eQEnsUHCo4tBiibSBHV3y46VsDV0Jf6sbdoLfQ0qZ6YvMWdVk7sN8iBue2Po4c2sbYdomXReI9TLKZHWhcjag&usqp=CAc" alt="wireless" class="banner-icon">
+            <h3>wireless headphoes</h3>
+            <p>$100</p>
+            </div>
+            <div class="product">
+            <img src="data:image/webp;base64,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" alt="Watch" class="banner-icon">
+            <h3>wireless headphoes</h3>
+            <p>$100</p>
+            </div>
+        </div>
+    </section>
+    </div>
+    <footer>
+        &copy;2025 Arjun Menon . All Rights Reserved;
+    </footer>
+</body>
+</html>

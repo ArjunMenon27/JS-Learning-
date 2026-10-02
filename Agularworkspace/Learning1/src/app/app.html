@@ -1,0 +1,9 @@
+<h1> Welcome, {{Name}}!</h1>
+<label>Email: <input type="email" [value]="userEmail"></label>
+<p [class.verified]="isVerified">
+  Email is verified.
+</p>
+<button (click)="submitForm ()">Submit</button>
+<p>{{message}}</p>
+Enter your name <input type="text" [(ngModel)]="inputValue">
+<h1>{{inputValue}}</h1>

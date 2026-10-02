@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function validations() {
+             var name=document.f1.user.value
+             console.log("the entered name is" +name)
+             var password=document.f1.password.value
+                console.log("the entered password is" +password)
+                if (name=="")
+            { alert("the name is empty")
+            }
+            else if(password=="")
+            { alert("the password is empty") }
+             else if(name.length<5)
+            { alert("the name should be more than 5 characters") }
+             else if(password.length<8)
+            { alert("the password should be more than 8 characters") }
+             else{
+                document.write("<h1>the form is submitted</h1>")
+             }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="f1">
+        UserName <input type="text" name="user"><br>
+        Password <input type="password" name="password"><br>
+        <input type="button" value="Submit" onclick="validations()">
+        </form>
+    </body>
+</html>

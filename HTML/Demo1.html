@@ -1,0 +1,58 @@
+h1>Student Contact Form</h1>
+    <form>
+        <table border="1" height="10%" >
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name" value=""></td>
+            </tr>
+            <tr>
+                <td>Reason</td>
+                <td><textarea cols="20" rows="5" name="reason"></textarea></td>
+            </tr>
+            <tr>
+                <td>Phone No</td>
+                <td>
+                    <select name="country_code">
+                        <option value="+91">+91</option>
+                        <option value="+92">+92</option>
+                        <option value="+93">+93</option>
+                    </select>
+                    <input type="text" name="phone">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" name="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form> 
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<h2>Contact Us</h2>
+<form >
+<table>
+<tr>
+<td> Name</td>
+<td><input type="text" id="name" name="name" required></td>
+</tr>
+<tr>
+<td>
+Reason
+</td>
+<td>
+<textarea id="reason" name="reason" rows="5" required></textarea>
+</td>
+</tr>
+<tr>
+<td> Phone</td>
+<td><input type="number" id="phone" name="phone" required></td>
+</tr>
+</table>
+<button type="submit">Save Details</button>
+</form>
+</center>
+</body>
+</html>

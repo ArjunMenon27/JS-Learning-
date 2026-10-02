@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<header>
+<style>
+    nav{
+        background-color: #484646;
+    }
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0%;
+        list-style: none;
+    }
+    .menu > li{
+        position: relative;
+    }
+    .menu >li >a {
+        display: block;
+        padding: 15px 20px;
+        color: aliceblue;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .menu >li >a:hover{
+        border-radius: 5px;
+        background-color: #8c8989;
+    }
+    .submenu {
+        position: absolute;
+        top: 100%;
+        padding: 5px;
+        list-style: none;
+        background-color:  #484646;
+        text-decoration: none;
+        font-weight: bold;
+        display: none;
+    }
+
+    .menu > li:hover .submenu {
+        display: block;
+    }
+    .submenu >li >a {
+        color: aliceblue;
+        padding: 15px 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .submenu>li:hover {
+    background-color: #8c8989;
+    }
+    .submenu>li{
+        position: relative;
+    }
+    .subsubmenu{
+        position: absolute;
+        top: 0%;
+        left: 100%;
+        padding: 5px; 
+        list-style: none;
+        background-color:  #484646;
+        text-decoration: none;
+        font-weight: bold;
+        display: none;
+    }
+    .subsubmenu >li>a{
+        color: aliceblue;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .subsubmenu >li:hover {
+    background-color: #8c8989;
+    }
+    .submenu > li:hover > .subsubmenu {
+        display: block;
+    }
+</style>
+</header>
+<body>
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Products</a>
+                <ul class="submenu">
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Laptop</a></li>
+                    <li><a href="#">Camera</a></li>
+                    <li>
+                        <a href="#">Watches</a>
+                        <ul class="subsubmenu">
+                            <li><a href="#">Seiko</a></li>
+                            <li><a href="#">Tissot</a></li>
+                            <li><a href="#">Swatch</a></li>
+                            <li><a href="#">Rolex</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">shoes</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Cart</a>
+            </li>
+            <li>
+                <a href="#">Login</a>
+            </li>
+
+        </ul>
+    </nav>
+</body>
+</html>

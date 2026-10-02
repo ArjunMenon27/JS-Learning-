@@ -1,0 +1,19 @@
+{
+    "questions": [
+        {
+            "question": "What is the capital of France?",
+            "choices": ["Paris", "London", "Berlin", "Madrid"],
+            "correctanswer": "Paris"
+        },
+        {
+            "question": "What is the largest planet in our solar system?",
+            "choices": ["Earth", "Mars", "Jupiter", "Saturn"],
+            "correctanswer": "Jupiter"
+        },
+        {
+            "question": "Who wrote 'To Kill a Mockingbird'?",
+            "choices": ["Harper Lee", "Mark Twain", "Ernest Hemingway", "F. Scott Fitzgerald"],
+            "correctanswer": "Harper Lee"
+        }
+    ]
+}
